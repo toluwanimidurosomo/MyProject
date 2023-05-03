@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4d6d798b56.js" crossorigin="anonymous"></script>
-    <link href="pro.css" rel="stylesheet">
+    <link href="css/pro.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="top-right">
-                    <li class="right"><i class="fa-solid fa-moon"></i></li>
+                    <li class="right"><i id="icon" class="fa-solid fa-moon"></i></li>
                     <li class="right"><i class="fa-solid fa-bell"></i></li>
                     <li class="right"><i class="fa fa-shopping-basket" aria-hidden="true"></i></li>
                     <button type="button" class="btn">Become a Member</button>
@@ -125,7 +125,9 @@
                 <button type="button" class="btn2">Food</button>
                 <button type="button" class="btn2">Books</button>
                 <button type="button" class="btn2">Clothes</button>
-                <button type="button" class="btn2">Groceries</button>
+                <button type="button" class="btn2">Grocery</button>
+                <button type="button" class="btn2">Electronics</button>
+                <button type="button" class="btn2">Kitchen Utensils</button>
                 <button type="button" class="btn2">Furnitures</button>
                 <button type="button" class="btn2">Baby Care</button>
                 <button type="button" class="btn2">Stationary</button>
@@ -138,7 +140,7 @@
                 <div class="image1">
                     <img
                         src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFjYm9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
-                    <button type="button" class="btn3"><i class="fa-solid fa-heart"></i></button>
+                    <button type="button" class="btn3"><i onclick="Toggle1()" id="love" class="fa-solid fa-heart"></i></button>
                     <button type="button" class="btn4"><i class="fa-solid fa-layer-group"></i></button>
 
 
@@ -153,7 +155,9 @@
                         <div class="words">
                             <h5>MacBook Pro 13" Big Discount</h5>
                             <a href="#">Eshop Spot</a><br>
-                            <a href="#" class="price"><span>$1,999.00</span> $3,999.00</a>
+                            <div class="price">
+                                <a href="#">$1,999.00 <span>$3,999.00</span></a>
+                            </div>
                         </div>
 
                     </div>
@@ -302,74 +306,74 @@
                         src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFjYm9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
                     <button type="button" class="btn3"><i class="fa-solid fa-heart"></i></button>
                     <button type="button" class="btn4"><i class="fa-solid fa-layer-group"></i></button>
-            
-            
-            
-            
+
+
+
+
                     <div class="imagee">
                         <div class="profile-img">
                             <img src="https://images.unsplash.com/photo-1627796795540-18e2db6d3908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3BvbmdlYm9iJTIwc3F1YXJlcGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                                 alt="A Plane Window view">
                         </div>
-            
+
                         <div class="words">
                             <h5>MacBook Pro 13" Big Discount</h5>
                             <a href="#">Eshop Spot</a><br>
                             <a href="#" class="price"><span>$1,999.00</span> $3,999.00</a>
                         </div>
-            
+
                     </div>
                 </div>
-            
-            
-            
+
+
+
                 <div class="image1">
                     <img
                         src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFjYm9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
                     <button type="button" class="btn3"><i class="fa-solid fa-heart"></i></button>
                     <button type="button" class="btn4"><i class="fa-solid fa-layer-group"></i></button>
-            
-            
-            
-            
+
+
+
+
                     <div class="imagee">
                         <div class="profile-img">
                             <img src="https://images.unsplash.com/photo-1627796795540-18e2db6d3908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3BvbmdlYm9iJTIwc3F1YXJlcGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                                 alt="A Plane Window view">
                         </div>
-            
+
                         <div class="words">
                             <h5>MacBook Pro 13" Big Discount</h5>
                             <a href="#">Eshop Spot</a><br>
                             <a href="#" class="price"><span>$1,999.00</span> $3,999.00</a>
                         </div>
-            
+
                     </div>
                 </div>
-            
-            
-            
+
+
+
                 <div class="image1">
                     <img
                         src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFjYm9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
                     <button type="button" class="btn3"><i class="fa-solid fa-heart"></i></button>
                     <button type="button" class="btn4"><i class="fa-solid fa-layer-group"></i></button>
-            
-            
-            
-            
+
+
+
+
                     <div class="imagee">
                         <div class="profile-img">
                             <img src="https://images.unsplash.com/photo-1627796795540-18e2db6d3908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3BvbmdlYm9iJTIwc3F1YXJlcGFudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                                 alt="A Plane Window view">
                         </div>
-            
+
                         <div class="words">
                             <h5>MacBook Pro 13" Big Discount</h5>
                             <a href="#">Eshop Spot</a><br>
                             <a href="#" class="price"><span>$1,999.00</span> $3,999.00</a>
                         </div>
-            
+
                     </div>
                 </div>
             </div>
@@ -379,6 +383,11 @@
 
     </div>
 
+
+
+
+
+    <script src="pro.js"></script>
 </body>
 
 </html>

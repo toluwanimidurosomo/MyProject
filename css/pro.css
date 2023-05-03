@@ -12,7 +12,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #111b21;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,15 +20,13 @@ body {
 }
 
 .main-cont {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    background-color: white;
     display: flex;
 }
 
 .sidebar {
     width: 17%;
-    background-color: #f9fafb;
     height: 100%;
     border-right: 1px solid #cccccc30;
 }
@@ -83,7 +81,7 @@ body {
 }
 
 a {
-    color: #637381;
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 13px;
     font-weight: 530;
@@ -131,7 +129,7 @@ li.ex {
 
 .dropdown-content a {
     float: none;
-    color: #637381;
+    color: var(--primary-color);
     padding: 10px 0 10px 30px;
     text-decoration: none;
     display: block;
@@ -174,7 +172,7 @@ li.ex {
     top: 10px;
     left: 20px;
     font-size: 18px;
-    color: grey;
+    color: var(--primary-color);
 }
 
 .search .fa-microphone {
@@ -182,7 +180,7 @@ li.ex {
     top: 10px;
     right: 40px;
     font-size: 18px;
-    color: gray;
+    color: var(--primary-color);
 }
 
 form {
@@ -208,11 +206,22 @@ form {
 
 .top-right {
     display: flex;
-    margin-left: 500px;
+    margin-left: 600px;
+    cursor: pointer;
 }
 
 .top-right .right {
     padding-right: 20px;
+}
+
+:root {
+    --primary-color: #1f242d;
+    --secondary-color: #fff ;
+}
+
+.dark-theme {
+    --primary-color: #637381;
+    --secondary-color: #1f242d;
 }
 
 .btn {
@@ -224,10 +233,11 @@ form {
     border-radius: 40px;
     padding: 20px 20px;
     text-align: center;
-    color: #1f242d;
+    color: var(--secondary-color);
     /* letter-spacing: 1px; */
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .profile-img1 {
@@ -257,13 +267,18 @@ form {
     font-weight: 530;
 }
 
+.btn2:hover {
+    background-color: #1f242d;
+    color: #fff;
+}
+
 .btn2 {
     margin-right: 15px;
     text-align: center;
     border: none;
     padding: 5px 10px;
     border-radius: 20px;
-    color: #637381;
+    color: var(--primary-color);
     font-weight: 530;
 }
 
@@ -279,12 +294,16 @@ form {
 
 .gallery {
     display: flex;
-    margin: 20px 20px 70px 20px;
+    margin: 20px 20px 120px;
+}
+
+.lovee {
+    color: red;
 }
 
 .image1 {
     position: relative;
-    width: 356px;
+    width: 402px;
     height: 236px;
     left: 0px;
     top: 0px;
@@ -293,39 +312,52 @@ form {
 .btn3 {
     position: absolute;
     left: 10px;
-    top: 150px;
+    top: 200px;
     margin-right: 15px;
     text-align: center;
     border: none;
     padding: 5px 10px;
     border-radius: 20px;
-    color: #637381;
+    color: var(--primary-color);
     font-weight: 530;
 }
 
 .btn4 {
     position: absolute;
     left: 50px;
-    top: 150px;
+    top: 200px;
     margin-right: 15px;
     text-align: center;
     border: none;
     padding: 5px 10px;
     border-radius: 20px;
-    color: #637381;
+    color: var(--primary-color);
     font-weight: 530;
 }
 
 img {
-    width: 330px;
+    width: 380px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
+.words {
+    margin: 0 10px;
+}
+
+.words span {
+    color: var(--primary-color);
+    text-decoration: line-through;
+}
+
 .price {
-    margin: 30px 0;
+    padding: 10px 0;
+}
+
+.price a {
+    color: orange;
 }
 
 .imagee {
